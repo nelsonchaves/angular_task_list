@@ -1,0 +1,19 @@
+.tasks {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 10px;
+    background-color: #244785;
+}
+
+.taskListHeader {
+    font-family: Avenir, sans-serif;
+    text-transform: lowercase;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+a {
+    margin-right: 20px;
+    color: whitesmoke
+}

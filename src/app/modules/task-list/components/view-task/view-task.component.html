@@ -1,0 +1,50 @@
+<div class="tasks">
+    <div class="taskContainer">
+        <div class="taskListHeader">Details:</div>
+    </div>
+    <div class="newTaskForm">
+        <div class="formContainer">
+            <form #myForm="ngForm">
+                <div class="taskTitle">
+                    <label for="taskTitle">Task:</label>
+                    <br>
+                    <input id="taskTitle" type="text" name="title" [(ngModel)]="detailsTask.title" />
+                </div>
+                <br />
+
+                <div class="description">
+                    <label for="description">Description:</label>
+                    <br>
+                    <textarea rows="1" id="description" name="dateToComplete" [(ngModel)]="detailsTask.description">
+                        </textarea>
+                </div>
+                <br />
+
+                <div class="itemsNeeded">
+                    <label for="itemsNeeded">Items Needed:</label>
+                    <br>
+                    <textarea rows="1" id="itemsNeeded" name="itemsNeeded" [(ngModel)]="detailsTask.itemsNeeded">
+                        </textarea>
+                </div>
+                <br />
+
+                <div class="taskTime">
+                    <label for="timeToComplete">Completed By:</label>
+                    <br>
+                    <input id="timeToComplete" type="text" name="timeToComplete"
+                        [(ngModel)]="detailsTask.dateToComplete" />
+                </div>
+                <br />
+
+
+                <div class="btnContainer">
+                    <a [routerLink]="['/edit', detailsTask.id]"><button>Edit</button></a>
+                    <button (click)="deleteTask(detailsTask.id)">Delete</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+<footer id="footer">
+    <div class="container contact"></div>
+</footer>

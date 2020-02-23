@@ -1,0 +1,39 @@
+{
+  "tasks": [
+    {
+      "title": "Pay Rent",
+      "description": "$1200 plus late fee 0f $100",
+      "itemsNeeded": "Bring Cash",
+      "dateToComplete": "Saturday",
+      "id": 2
+    },
+    {
+      "title": "Finish Angular Final",
+      "description": "Create Task List",
+      "itemsNeeded": "Holy Spirit",
+      "dateToComplete": "Saturday",
+      "id": 3
+    },
+    {
+      "title": "Buy Computer",
+      "description": "MackBookPro",
+      "itemsNeeded": "Money",
+      "dateToComplete": "Tuesday",
+      "id": 4
+    },
+    {
+      "title": "Pray",
+      "description": "Spend time with Jesus",
+      "itemsNeeded": "Bible & Coffee",
+      "dateToComplete": "Everyday",
+      "id": 5
+    },
+    {
+      "title": "Groceries",
+      "description": "Kids food",
+      "itemsNeeded": "Banana, Milk, Bread",
+      "dateToComplete": "Tonight",
+      "id": 6
+    }
+  ]
+}

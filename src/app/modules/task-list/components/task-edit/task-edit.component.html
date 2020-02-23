@@ -1,0 +1,49 @@
+<div class="tasks">
+    <div class="taskContainer">
+        <div class="taskListHeader">Edit Task:</div>
+    </div>
+    <div class="newTaskForm">
+        <div class="formContainer">
+            <form #myForm="ngForm">
+                <div class="taskTitle">
+                    <label for="taskTitle">Task:</label>
+                    <br>
+                    <input id="taskTitle" type="text" name="title" [(ngModel)]="editTask.title" />
+                </div>
+                <br />
+
+                <div class="description">
+                    <label for="description">Description:</label>
+                    <br>
+                    <textarea rows="1" id="description" name="dateToComplete" [(ngModel)]="editTask.description">
+                    </textarea>
+                </div>
+                <br />
+
+                <div class="itemsNeeded">
+                    <label for="itemsNeeded">Items Needed:</label>
+                    <br>
+                    <textarea rows="1" id="itemsNeeded" name="itemsNeeded" [(ngModel)]="editTask.itemsNeeded">
+                    </textarea>
+                </div>
+                <br />
+
+                <div class="taskTime">
+                    <label for="timeToComplete">Completed By:</label>
+                    <br>
+                    <input id="timeToComplete" type="text" name="timeToComplete"
+                        [(ngModel)]="editTask.dateToComplete" />
+                </div>
+                <br />
+
+
+                <div class="btnContainer">
+                    <button (click)="saveTask()">Save</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+<footer id="footer">
+    <div class="container contact"></div>
+</footer>
